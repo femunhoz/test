@@ -1,0 +1,1 @@
+ogr2ogr -f "MySQL" MYSQL:"spatialdata,host=localhost,user=root" -nln "map" -a_srs "EPSG:4683" cb_2018_us_zcta510_500k.shp -overwrite -addfields -fieldTypeToString All -lco ENGINE=MyISAM
